@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellspacing="0"cellpadding="5">
+        <thead><!-- 表格头部区域 -->
+            <tr>
+                <th colspan="3"><h3>表格标签</h3></th>
+            </tr>   
+            <tr>
+                <th>属性名</th>
+                <th>属性值</th>
+                <th>描述</th><!-- th 表头单元格会加粗居中显示 -->            
+            </tr>
+        </thead>
+        <tbody><!-- 表格主题区域 -->
+            <tr>
+                <td>align</td>
+                <td>left,center,right</td>
+                <td>规定表格相对周围元素的对齐方式</td>            
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>1,""</td>
+                <td>规定表格单元是否有边框，默认为""，表示没有边框</td>           
+            </tr>
+            <tr>
+                <td>cellpadding</td>
+                <td>像素值</td>
+                <td>规定单元边沿与其内容之间的空白，默认1像素</td>   
+            </tr>
+            <tr>
+                <td>cellspacing</td>
+                <td>像素值</td>
+                <td>规定单元格之间的空白，默认2像素</td>           
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>像素值或百分比</td>
+                <td>规定表格的宽度</td>            
+            </tr>
+        </tbody>
+        </table>
+        跨行合并：rowspan="合并单元格的个数"<br>
+        跨列合并：colspan="合并单元格的个数"<br>
+        目标单元格：如果是跨行：最上测单元格为目标单元格；跨列：最左侧单元格为目标单元格<br>
+</body>
+</html>
