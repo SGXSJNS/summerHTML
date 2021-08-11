@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="url地址" method="提交方式" name="表单域名称">
+        各种表单元素控件
+    </form>
+
+    <form action="demo.php" method="POST" name="name1">
+
+    </form>
+
+    <table border="1" cellspacing="0"cellpadding="5">
+        <thead> 
+            <tr>
+                <th>属性名</th>
+                <th>属性值</th>
+                <th>描述</th>    
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>name</td>
+                <td>由用户自定义</td>
+                <td>自定义input元素的名称</td>            
+            </tr>
+            <tr>
+                <td>value</td>
+                <td>由用户自定义</td>
+                <td>规定input元素的值</td>           
+            </tr>
+            <tr>
+                <td>checked</td>
+                <td>checked</td>
+                <td>规定input元素首次加载时应当被选中</td>   
+            </tr>
+            <tr>
+                <td>maxlength</td>
+                <td>正整数</td>
+                <td>规定输入字段中的字符的最大长度</td>           
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br>
+
+    <table border="1" cellspacing="0"cellpadding="5">
+        <thead> 
+            <tr>
+                <th colspan="2"><h4>type属性的属性值及其描述</h4></th>
+            </tr>
+            <tr>
+                <th>属性值</th>
+                <th>描述</th>    
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>button</td>
+                <td>定义可点击按钮(多数情况下，用于通过JS启动脚本)</td>           
+            </tr>
+            <tr>
+                <td>checkbox</td>
+                <td>定义复选框</td>          
+            </tr>
+            <tr>
+                <td>file</td>
+                <td>定义输入字段和“浏览”按钮，供文件上传</td> 
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td>定义隐藏的输入字段</td>        
+            </tr>
+            <tr>
+                <td>image</td>
+                <td>定义图像形式的提交按钮</td>        
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>定义密码字段，该字段中的字符被掩码</td>        
+            </tr>
+            <tr>
+                <td>radio</td>
+                <td>定义单选按钮</td>        
+            </tr>
+            <tr>
+                <td>reset</td>
+                <td>定义重置按钮。重置按钮会清除表单中的所有数据</td>        
+            </tr>
+            <tr>
+                <td>submit</td>
+                <td>定义提交按钮。提交按钮会把表单数据发送到服务器</td>        
+            </tr>
+            <tr>
+                <td>text</td>
+                <td>定义单行的输入字段，用户可在其中输入文本。默认宽度为20字符</td>        
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>input表单元素</h1>
+    <h4>文本框和密码框</h4>
+    <form action="xxx.php" method="get">
+        用户名:<input type="text" name="username" value="请输入用户名" maxlength="6"><br>
+        <!-- text 文本框 用户可以里面输入任何文字 -->
+        密码:<input type="password" name="pwd"><br><br>
+        <!-- password 密码框 用户看不见输入的密码 -->
+        <h4>单选框和复选框</h4>
+        <!-- name是表单元素名字 这里性别单选按钮必须有相同的name 才可以实现多选一 -->
+        <!-- 单选按钮和复选框可以设置 checked 属性，当前页面打开的时候就可以默认选中这个按钮 -->
+        性别:男<input type="radio" name="sex"value="男" checked="checked"> 女<input type="radio" name="sex"value="女"><br>
+        <!-- radio 单选按钮 可以实现多选 -->
+        爱好:吃饭<input type="checkbox" name="hobby"value="吃饭">睡觉<input type="checkbox" name="hobby"value="睡觉"checked="checked"><br>
+        <!-- checkbox 复选框 可以实现多选 -->
+        <input type="submit" value="免费注册">
+        <input type="reset" value="重新填写">   
+        <input type="button" value="获取短信验证码"><br>
+        <!-- 普通按钮 button 结合js使用 -->
+        上传头像:<input type="file">
+        <!-- 文件域 上传文件使用的 -->
+    </form>   
+</body>
+</html>
